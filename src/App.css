@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heritage,
+.nature,
+.food-beverages,
+.accomodations{
+  display: flex;
+  height: 850px;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.heritage{
+  background-image: url('/public/images/image-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 100px;
+}
+
+.nature {
+  background-image: url('/public/images/image-3.png');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.food-beverages{
+  background-image: url('/public/images/image-4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.accomodations{
+  background-image: url('/public/images/image-5.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
