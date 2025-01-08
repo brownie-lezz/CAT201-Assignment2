@@ -45,10 +45,14 @@
   width: 60vw;
   justify-content: end;
   margin-right: 31px;
+  padding: 0;
+  margin: 0; 
 }
 
 .nav-item {
   height: 80px;
+  margin: 0; 
+  padding: 0; 
 }
 
 .nav-links {
@@ -63,6 +67,7 @@
 .nav-links:hover {
   border-bottom: 4px solid white;
   transition: all 0.2s ease-out;
+  cursor: pointer;
 }
 
 .fa-bars {

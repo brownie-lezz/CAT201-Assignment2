@@ -2,27 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  background-color: black;
+  height: 25vh;
 }
 
 iframe {
   border: none;
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  overflow: hidden;
 }
 
-
-.cards {
-  padding: 64px;
+.cards-heritage {
+  margin-top: 100px;
   background-color: white;
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
 }
 
 p {
-  padding-top: 16px;
   text-align: center;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .cards-container {
@@ -50,6 +54,10 @@ p {
   border-radius: 10px;
 }
 
+.cards-item:hover{
+  cursor: pointer;
+}
+
 .cards-item-link {
   display: flex;
   flex-flow: column;
@@ -60,7 +68,6 @@ p {
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-  cursor: default;
 }
 
 .cards-item-pic-wrap {

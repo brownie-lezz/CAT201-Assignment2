@@ -1,5 +1,6 @@
-.cards{
-    padding: 20px;
+.cards-accommodation{
+    padding-top: 20px;
+    padding-bottom: 60px;
     background-color: white;
 }
 
@@ -36,6 +37,10 @@ p {
     border-radius: 10px;
 }
 
+.cards-item:hover{
+    cursor: pointer;
+  }
+
 .cards-item-link{
     display: flex;
     flex-flow: column;
@@ -46,10 +51,9 @@ p {
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-    cursor: default;
 }
 
-.cards-item-pic-wrap{
+.cards-item-pic-wrap-hotel{
     position: relative;
     width: 100%;
     padding-top: 70%;
@@ -61,7 +65,7 @@ p {
     animation-duration: 2s;
 }
 
-.cards-item-pic-wrap ::after{
+.cards-item-pic-wrap-hotel::after{
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -70,8 +74,8 @@ p {
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
-    color: white;
-    background-color: #f43b1f;
+    color: rgb(26, 26, 131);
+    background-color: #ffe607;
     box-sizing: border-box;
 }
 
@@ -103,6 +107,8 @@ p {
     font-size: 18px;
     line-height: 24px;
 }
+
+
 
 @media only screen and (min-width: 1200px) {
     .content__blog__container {

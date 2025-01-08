@@ -76,7 +76,7 @@ import './Food_Sliders.css';
     };
   
     return (
-      <div className="food-slider-container">
+      <section id="food" div className="food-slider-container">
         <div className="food-description">
           <h1>Food and Beverages</h1>
           <p>Penang is a food paradise, offering a diverse array of dishes that reflect its rich cultural heritage.</p>
@@ -98,7 +98,7 @@ import './Food_Sliders.css';
             ❯
           </button>
         </div>
-      </div>
+      </section>
     );
   }
   

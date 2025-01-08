@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    closeMenu();
-  };
 
   return (
     <>
@@ -22,31 +15,62 @@ function Navbar() {
             src="images/logo.png"
             alt="PenGems Logo"
             className="navbar-logo"
-            onClick={() => scrollToSection('home')}
           />
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <span className="nav-links" onClick={() => scrollToSection('heritage')}>
-                Heritage
-              </span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-links" onClick={() => scrollToSection('nature')}>
-                Nature
-              </span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-links" onClick={() => scrollToSection('food')}>
+              <Link
+                to="food"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-links"
+                onClick={closeMenu}
+              >
                 Food and Beverages
-              </span>
+              </Link>
             </li>
             <li className="nav-item">
-              <span className="nav-links" onClick={() => scrollToSection('accommodations')}>
+              <Link
+                to="nature"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-links"
+                onClick={closeMenu}
+              >
+                Nature
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="heritage"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-links"
+                onClick={closeMenu}
+              >
+                Heritage
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="accommodations"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav-links"
+                onClick={closeMenu}
+              >
                 Accommodations
-              </span>
+              </Link>
             </li>
           </ul>
         </div>

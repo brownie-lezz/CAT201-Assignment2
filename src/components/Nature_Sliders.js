@@ -46,10 +46,10 @@ import './Food_Sliders.css';
     };
   
     return (
-      <div className="nature-slider-container">
+      <section id="nature" div className="nature-slider-container">
         <div className="nature-description">
           <h1>Nature and Wildlife</h1>
-          <p>Penang's Nature & Wildlife offers a diverse range of experiences, from exploring lush rainforests to discovering the stunning flora and fauna at various nature parks.</p>
+          <p>Penang, Malaysia, is a tropical haven rich in lush rainforests, diverse wildlife, serene beaches, and vibrant ecosystems, making it a paradise for nature lovers.</p>
         </div>
         <div className="slider">
           <button className="slider-button prev" onClick={goToPrevious}>
@@ -68,7 +68,7 @@ import './Food_Sliders.css';
             ❯
           </button>
         </div>
-      </div>
+      </section>
     );
   }
   
