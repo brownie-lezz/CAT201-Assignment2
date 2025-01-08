@@ -1,53 +1,52 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
 import './Navbar.css';
-import {Button} from './Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
-  const [button, setButton] = useState(true);
-  const showButton = () => {
-    if(window.innerWidth <= 960){
-      setButton(false);
-    } else{
-      setButton(true);
-    }
-  };
 
-  window.addEventListener('resize', showButton);
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeMenu();
+  };
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMenu}>
-            PenGems
-          </Link>
+          <img
+            src="images/logo.png"
+            alt="PenGems Logo"
+            className="navbar-logo"
+            onClick={() => scrollToSection('home')}
+          />
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className = 'nav-item'>
-              <Link to='/heritage' className='nav-links' onClick={closeMenu}>
+            <li className="nav-item">
+              <span className="nav-links" onClick={() => scrollToSection('heritage')}>
                 Heritage
-              </Link>
+              </span>
             </li>
-            <li className = 'nav-item'>
-              <Link to='/nature' className='nav-links' onClick={closeMenu}>
+            <li className="nav-item">
+              <span className="nav-links" onClick={() => scrollToSection('nature')}>
                 Nature
-              </Link>
+              </span>
             </li>
-            <li className = 'nav-item'>
-              <Link to='/food-beverages' className='nav-links' onClick={closeMenu}>
+            <li className="nav-item">
+              <span className="nav-links" onClick={() => scrollToSection('food')}>
                 Food and Beverages
-              </Link>
+              </span>
             </li>
-            <li className = 'nav-item'>
-              <Link to='/accomodations' className='nav-links' onClick={closeMenu}>
-                Accomodations
-              </Link>
+            <li className="nav-item">
+              <span className="nav-links" onClick={() => scrollToSection('accommodations')}>
+                Accommodations
+              </span>
             </li>
           </ul>
         </div>

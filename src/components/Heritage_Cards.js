@@ -6,6 +6,7 @@ function Heritage_Cards(){
   return(
     <div className='cards'>
       <h1>Culture and Heritage</h1>
+      <p>Penang’s culture and heritage are a vibrant blend of Malay, Chinese, Indian, and European influences, best showcased in George Town, a UNESCO World Heritage Site.</p>
       <div className='cards-container'>
         <div className='cards-wrapper'>
           <ul className='cards-items'>
