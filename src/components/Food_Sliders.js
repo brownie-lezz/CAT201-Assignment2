@@ -11,7 +11,7 @@ import './Food_Sliders.css';
     {
       image: 'images/food-2.jpg',
       title: 'Penang Laksa',
-      description: 'A tangy fish-based noodle soup that is a must-try for food enthusiasts.',
+      description: 'A spicy noodle soup with a tangy, sour broth made from tamarind, fish, and a blend of aromatic spices like lemongrass and galangal.',
     },
     {
       image: 'images/food-3.jpg',
