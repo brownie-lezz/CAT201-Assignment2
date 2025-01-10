@@ -17,7 +17,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://en-gb.facebook.com/reg/'
               target='_blank'
               aria-label='Facebook'
             >
@@ -25,7 +25,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/accounts/emailsignup/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -33,7 +33,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='/'
+              to='https://www.youtube.com/'
               target='_blank'
               aria-label='Youtube'
             >
@@ -41,11 +41,11 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://twitter.com/i/flow/signup?lang=kn'
               target='_blank'
               aria-label='Twitter'
             >
-              <i class='fab fa-twitter' />
+              <i class='fab fa-x-twitter' />
             </Link>
           </div>
         </div>
