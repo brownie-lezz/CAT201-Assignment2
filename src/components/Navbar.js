@@ -37,7 +37,7 @@ function Navbar() {
               <Link
                 to="nature"
                 spy={true}
-                smo   o th={true}
+                smooth={true}
                 offset={0}
                 duration={500}
                 className="nav-links"

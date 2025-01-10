@@ -116,6 +116,14 @@
 }
 
 @media (max-width: 768px) {
+  .food-description h1 {
+    font-size: 28px;
+  }
+  
+  .food-description p {
+    margin-bottom: 18px;
+  }
+  
   .food-slider-container {
     height: auto;
   }

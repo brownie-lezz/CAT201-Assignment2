@@ -96,6 +96,13 @@
 }
 
 @media (max-width: 768px) {
+  .nature-description > h1 {
+    font-size: 28px;
+  }
+  
+  .nature-description > p {
+    margin-bottom: 18px;
+  }
   .nature-slider-container {
     height: auto;
   }
