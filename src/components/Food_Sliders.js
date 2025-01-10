@@ -9,12 +9,12 @@ import './Food_Sliders.css';
       description: 'A beloved Penang dish, stir-fried flat rice noodles with prawns, egg, and cockles.',
     },
     {
-      image: 'images/food-2.jpg',
+      image: 'images/penang-laksa.jpg',
       title: 'Penang Laksa',
       description: 'A spicy noodle soup with a tangy, sour broth made from tamarind, fish, and a blend of aromatic spices like lemongrass and galangal.',
     },
     {
-      image: 'images/food-3.jpg',
+      image: 'images/nasi-kandar.jpg',
       title: 'Nasi Kandar',
       description: 'A hearty meal of rice with a variety of rich and flavorful curries.',
     },
